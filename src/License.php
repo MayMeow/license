@@ -8,6 +8,7 @@ class License
     public function __construct(
         protected string $publicKey_path = 'public_key_for-your-app.txt',
         protected string $privateKey_path = 'private_key_keep-safe.txt',
+        protected ?string $licenseData = null
     )
     {
     }
@@ -63,7 +64,11 @@ class License
      */ 
     protected function getLicense(): array
     {
-        return json_decode(base64_decode(file_get_contents('license.txt')), true);
+        if ($this->licenseData) {
+            return json_decode(base64_decode($this->licenseData), true);
+        } else {
+            return json_decode(base64_decode(file_get_contents('license.txt')), true);
+        }
     }
 
     /**
