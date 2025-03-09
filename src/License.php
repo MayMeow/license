@@ -12,10 +12,10 @@ class License
     {
     }
 
-    public static function new(string $name, string $app, array $features): array
+    public static function new(string $name, string $app, array $features, int $additional_days = 365): array
     {
         // timestamp for 1 year
-        $validUntil = time() + (365 * 24 * 60 * 60);
+        $validUntil = time() + ($additional_days * 24 * 60 * 60);
 
         //generate license id from name and app and validUntil
         $id = sha1($name . $app . $validUntil);
