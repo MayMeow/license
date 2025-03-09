@@ -1,0 +1,16 @@
+{
+    "name": "may-meow/license",
+    "description": "License package for PHP apps",
+    "autoload": {
+        "psr-4": {
+            "MayMeow\\License\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "May",
+            "email": "may@maymeow.tld"
+        }
+    ],
+    "require": {}
+}

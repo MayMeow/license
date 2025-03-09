@@ -1,0 +1,7 @@
+vendor/*
+
+keys.json
+private_key_keep-safe.txt
+public_key_for-your-app.txt
+license.txt
+
