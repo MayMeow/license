@@ -1,5 +1,5 @@
 {
-    "name": "may-meow/license",
+    "name": "maymeow/license",
     "description": "License package for PHP apps",
     "autoload": {
         "psr-4": {
@@ -9,8 +9,15 @@
     "authors": [
         {
             "name": "May",
-            "email": "may@maymeow.tld"
+            "email": "php.maymeow.license@maymeow.mozmail.com",
+            "homepage": "https://maymeow.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "support": {
+        "source": "https://github.com/maymeow/license",
+        "issues": "https://github.com/maymeow/license/issues",
+        "docs": "https://github.com/MayMeow/license?tab=readme-ov-file#readme"
+    },
+    "license": "MIT"
 }
